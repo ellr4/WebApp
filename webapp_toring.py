@@ -181,11 +181,11 @@ elif page == "Nutrition":
 elif page == "About":
     st.title("ℹ️ About This App")
     st.write("""
-    **What the app does (use case):**  
-    Basically, this is a simple home fitness app that helps people stay fit without needing a gym. You can pick your fitness goals like losing weight, building muscle, or just staying in shape, and it gives you workout ideas that you can do at home. It also has a nutrition section where you can track what you eat and drink, including water intake. It's meant for anyone who wants to work out from home and keep an eye on their health habits.
+    **What it does:**  
+    A simple home fitness app for tracking workouts and nutrition. Pick your goal (lose weight, build muscle, or stay fit) and get personalized exercises and food suggestions.
 
-    **Who the target user is:**  
-    Anyone from teens to older adults who want to exercise at home. Could be busy people who don't have time for the gym, beginners just starting out, or folks who like working out without fancy equipment. If you're recovering from an injury and need easy exercises, or just want to maintain your fitness level, this app is for you.
+    **Who it's for:**  
+    Anyone who wants to exercise at home beginners, busy people, or those without gym equipment.
 
     **What inputs does the app collect, and what outputs does it show:**  
     **Inputs collected:**  
