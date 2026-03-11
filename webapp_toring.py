@@ -187,7 +187,6 @@ elif page == "About":
     **Who it's for:**  
     Anyone who wants to exercise at home beginners, busy people, or those without gym equipment.
 
-    **What inputs does the app collect, and what outputs does it show:**  
     **Inputs collected:**  
     - Your name and age  
     - Your fitness goal (lose weight, build muscle, or stay fit)  
