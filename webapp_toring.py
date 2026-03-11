@@ -13,18 +13,18 @@ page = st.sidebar.radio("Go to:", ["Home", "Workout Tracker", "Nutrition", "Abou
 if page == "Home":
     st.title("💪 Home Fitness App")
     st.header("🎯 Welcome to Your Fitness Companion")
-    st.text("🏋️ Track workouts, 🥗 monitor nutrition, and 🚀 stay motivated!")
+    st.text("Track workouts, monitor nutrition, and stay motivated!")
 
     # Inputs
-    name = st.text_input("👤 Enter your name:")
-    age = st.number_input("🎂 Enter your age:", min_value=10, max_value=100)
-    goal = st.selectbox("🎯 Choose your fitness goal:", ["Lose Weight", "Build Muscle", "Stay Fit"])
+    name = st.text_input("Enter your name:")
+    age = st.number_input("Enter your age:", min_value=10, max_value=100)
+    goal = st.selectbox("Choose your fitness goal:", ["Lose Weight", "Build Muscle", "Stay Fit"])
     if name:
         st.write(f"👋 Hello {name}, your goal is: {goal}")
 
     # Fun components
     days = st.slider("📅 How many workout days per week?", 1, 7, 3)
-    time_pref = st.radio("⏰ Preferred workout time:", ["🌅 Morning", "☀️ Afternoon", "🌙 Evening"])
+    time_pref = st.radio("⏰ Preferred workout time:", ["Morning", "Afternoon", "Evening"])
     theme_color = st.color_picker("🎨 Pick your favorite home workout color theme")
 
     # Confirmation button
@@ -142,7 +142,7 @@ elif page == "Nutrition":
     goal = st.session_state.get("user_goal", None)
 
     if goal:
-        st.subheader(f"🍎 Recommended Foods for {goal}")
+        st.subheader(f"Recommended Foods for {goal}")
 
         if goal == "Lose Weight":
             foods_df = pd.DataFrame({"Food": ["Salad", "Grilled Chicken", "Broccoli", "Berries", "Green Tea"]})
@@ -163,10 +163,10 @@ elif page == "Nutrition":
 
     # Meal logging
     st.subheader("🍽️ Today's Meals")
-    breakfast = st.text_input("🌅 Breakfast:")
-    lunch = st.text_input("🥙 Lunch:")
-    dinner = st.text_input("🍴 Dinner:")
-    snacks = st.text_input("🍿 Snacks:")
+    breakfast = st.text_input("Breakfast:")
+    lunch = st.text_input("Lunch:")
+    dinner = st.text_input("Dinner:")
+    snacks = st.text_input("Snacks:")
 
     if st.button("Log Meals"):
         if any([breakfast, lunch, dinner, snacks]):
